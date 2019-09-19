@@ -5,19 +5,6 @@ Gaussian Density Model
 We proposes a novel and robust 3D object segmentation method,  the Gaussian Density Model (GDM) algorithm. The algorithm works with point clouds scanned in the urban environment using the density metrics, based on existing quantity of features in the neighborhood. The LiDAR Velodyne 64E was used to scan urban environment.
 ==============================================================
 
-Versión 1
-  * Login
-  * Importación de CSV a MySQL
-  * Exportación de MySQL a CSV
-  * Alta de nuevos registros y evaluaciones
-  * Administración de Usuarios
-  * Reporte General
-  * Reporte Individual
-  * Exportación de Reportes a PDF
-
-Versión 2
-  * Optimización y validación de código
-  * Catálogos
 
 Módulos requeridos:
 ====================
