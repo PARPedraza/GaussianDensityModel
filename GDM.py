@@ -4,7 +4,9 @@
 #Guassian Density Model
 #Web Page
 #https://github.com/PARPedraza/GaussianDensityModel
-#autors: Alfonso Ramírez-Pedraza and José-Joel González-Barbosa
+#autors: a) Alfonso Ramírez-Pedraza and b) José-Joel González-Barbosa
+#afiliation: a) Centro de Investigación en Óptica A. C.
+#            b) Centro de Investigación en Ciencia Aplicada y Tecnología Avanzada - IPN
 
 """
 Example:
