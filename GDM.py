@@ -309,7 +309,7 @@ class GaussianDensity(object):
                 Ren=0
 
 #Variables Input
-dir="/home/tilmahutli/Documentos/Nubes_Puntos/Nubes/Nubes-Densidad/TotalDensi9/Resultados-Segmentaciones"
+dir="~/dataset"
 Density=0 #Density segmentation number
 
 Point=GaussianDensity(dir,Density)
@@ -326,10 +326,10 @@ for file in list_files:
     ##Validate: if exist folder to save objects
     Point.Validate(fileroot[:-4])
     ##Read Cloud Point
-    cloud=Point.readData(fileroot)
+    data=Point.readData(fileroot)
 
     #Get Density Cloud Point
-    #Data=Point.Density(cloud)
+    cloud=Point.Density(data)
     #Plot Cloud Point 3D Density
     #Point.print3D(cloud)
 
