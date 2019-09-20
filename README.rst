@@ -32,11 +32,9 @@ Example:
 
 ``$ python -m doctest -v GDM.py``
 
-  .. image:: https://img.shields.io/badge/license-AGPL--3-blue.png
-   :target: https://www.gnu.org/licenses/agpl
-   :alt: License: AGPL-3
 
 Cite article (In review):
+========
 
 @article{article,
 author = {A. R. Pedraza, J. J. G. Barbosa, K. L. F. Rodríguez, A. I. G. Moreno and E. A. G. Barbosa},
@@ -48,3 +46,7 @@ volume = {},
 journal = {Latin America Transactions, IEEE (Revista IEEE America Latina},
 doi = {10.1109/TLA.}
 }
+
+  .. image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+   :target: https://www.gnu.org/licenses/agpl
+   :alt: License: AGPL-3
