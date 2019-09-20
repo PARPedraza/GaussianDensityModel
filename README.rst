@@ -3,7 +3,7 @@ Gaussian Density Model
 ====================
 
 We used the LiDAR Velodyne 64E to scan urban environment.
-==============================================================
+==================
 
 
 Required Modules:
