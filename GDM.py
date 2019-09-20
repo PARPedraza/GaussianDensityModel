@@ -309,9 +309,8 @@ class GaussianDensity(object):
                 Ren=0
 
 #Variables Input
-dir="~/dataset"
+dir=os.path.join(os.path.dirname(os.path.abspath(__file__)),"dataset")
 Density=0 #Density segmentation number
-
 Point=GaussianDensity(dir,Density)
 
 #Find cloud points
