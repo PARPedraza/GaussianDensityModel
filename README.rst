@@ -36,7 +36,7 @@ Example:
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-Cite article:
+Cite article (In review):
 
 @article{article,
 author = {A. R. Pedraza, J. J. G. Barbosa, K. L. F. Rodríguez, A. I. G. Moreno and E. A. G. Barbosa},
