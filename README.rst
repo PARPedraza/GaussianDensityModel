@@ -20,9 +20,9 @@ Installation:
 
 ``$ sudo apt upgrade``
 
-``$ ``
+``$ pip install numpy``
 
-``$ ``
+``$ pip install pandas``
 
 
 
