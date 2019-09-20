@@ -10,8 +10,8 @@ Required Modules:
 ====================
 
   * PIP      
-  * Numpy    : https://www.sublimetext.com/3
-  * Pandas   : https://www.apachefriends.org/download.html
+  * Numpy
+  * Pandas
 
 Installation:
 ==============================
