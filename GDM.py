@@ -4,7 +4,7 @@
 #Guassian Density Model
 #Web Page
 #https://github.com/PARPedraza/GaussianDensityModel
-#autors: Alfonso Ramirez Pedraza and Jose Joel Gonzalez Barbosa
+#autors: Alfonso Ramírez-Pedraza and José-Joel González-Barbosa
 
 """
 Example:
