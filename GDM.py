@@ -333,11 +333,8 @@ for file in list_files:
     #Plot Cloud Point 3D Density
     #Point.print3D(cloud)
 
-    ##Get Our-Segmentation
-    start_time=time()
+    ##Get Segmentation
     Point.OurSegmentation(cloud,fileroot[:-4])
-    elapse_time=time()-start_time
-    print("Segmentation time: ",elapse_time)
 
     #Plot results
     list_files1 = Point.findFiles(fileroot[:-4])
