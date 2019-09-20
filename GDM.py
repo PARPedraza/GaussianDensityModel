@@ -4,7 +4,7 @@
 #Guassian Density Model
 #Web Page
 #https://github.com/PARPedraza/GaussianDensityModel
-#autors: Alfonso Ramírez-Pedraza, CIO A. C., Loma del Bosque 115, Col. Lomas del Campestre León, Gto, México. C.P. 37150 and 
+#autors: Alfonso Ramírez-Pedraza, CIO A. C., Loma del Bosque 115, Col. Lomas del Campestre, León, Gto, México. C.P. 37150 and 
 #        José-Joel González-Barbosa, CICATA-IPN, Cerro-Blanco 141, Colinas del Cimatario, Querétaro, Qro. Mexico C.P. 76090
 
 """
