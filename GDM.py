@@ -12,6 +12,23 @@ Example:
 
         $ python -m doctest -v GDM.py
 """
+
+"""Segmentation Gaussian Density Model
+Test Case
+>>> dir=os.path.join(os.path.dirname(os.path.abspath(__file__)),"dataset")
+>>> Density=0
+>>> Point=GaussianDensity(dir,Density)
+>>> list_files=Point.findFiles(dir)
+>>> print("Segmentation in process...")
+>>> for file in list_files:
+>>> fileroot = dir + "/" + file
+>>> Point.Validate(fileroot[:-4])
+>>> cloud=Point.readData(fileroot)
+>>> Point.OurSegmentation(cloud,fileroot[:-4])
+>>> list_files1 = Point.findFiles(fileroot[:-4])
+>>> Point.print2D(cloud,fileroot[:-4])
+"""
+
 import math
 import os,csv,time,pandas as pd
 import numpy as np
@@ -21,7 +38,6 @@ from matplotlib import interactive
 from itertools import cycle
 import matplotlib as mpl
 from mpl_toolkits.mplot3d import Axes3D
-from time import time
 
 class GaussianDensity(object):
 
@@ -32,10 +48,12 @@ class GaussianDensity(object):
     #######################################################
     def __init__(self,dir,Density):
         """The constructor Initialize Gaussian Density Model.
+
         Args:
             self: The object pointer.
             dir (str): destination directory (read and save files).
             rootname (str): objects name.
+
         Returns:
             pointer: The object pointer.
         """
@@ -169,7 +187,7 @@ class GaussianDensity(object):
     ####Gaussian Density Model Segmentation
     #######################################################
     #######################################################
-    def Density(self,cloud):
+    def DensityMetric(self,cloud):
         """Get Density cloud points.
         Args:
             self: The object pointer.
@@ -307,34 +325,3 @@ class GaussianDensity(object):
                 Ren=len(cloudBeta)
             else:
                 Ren=0
-
-#Variables Input
-dir=os.path.join(os.path.dirname(os.path.abspath(__file__)),"dataset")
-Density=0 #Density segmentation number
-Point=GaussianDensity(dir,Density)
-
-#Find cloud points
-list_files=Point.findFiles(dir)
-
-#Get process on cloud point find on path
-print("Segmentation in process...")
-for file in list_files:
-    ##Cadena File Name and Path
-    fileroot = dir + "/" + file
-
-    ##Validate: if exist folder to save objects
-    Point.Validate(fileroot[:-4])
-    ##Read Cloud Point
-    data=Point.readData(fileroot)
-
-    #Get Density Cloud Point
-    cloud=Point.Density(data)
-    #Plot Cloud Point 3D Density
-    #Point.print3D(cloud)
-
-    ##Get Segmentation
-    Point.OurSegmentation(cloud,fileroot[:-4])
-
-    #Plot results
-    list_files1 = Point.findFiles(fileroot[:-4])
-    Point.print2D(cloud,fileroot[:-4])

@@ -2,7 +2,7 @@
 Gaussian Density Model
 ====================
 
-We used the LiDAR Velodyne 64E to scan urban environment.
+Segmentation algorithm of urban environment, we used the LiDAR Velodyne 64E.
 ==================
 
 

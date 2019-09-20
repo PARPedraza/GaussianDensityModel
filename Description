@@ -3,8 +3,8 @@ Type: Package
 Title: Clustering via the Gaussian Density Model Algorithm
 Version: 1.0
 Date: 2019-09-20
-Author: Alfonso Ramírez-Pedraza <ponchorp.1985@gmail.com> and José-Joel gonzalez-Barbosa <jgonzalezba@ipn.mx>
-Maintainer: Alfonso Ramírez-Pedraza 
+Web Page: https://github.com/PARPedraza/GaussianDensityModel
+Authors: Alfonso Ramírez-Pedraza, CIO A. C., Loma del Bosque 115, Col. Lomas del Campestre, León, Gto, México, C.P. 37150, <ponchorp.1985@gmail.com> and José-Joel gonzalez-Barbosa, CICATA-IPN, Cerro-Blanco 141, Colinas del Cimatario, Querétaro, Qro. Mexico, C.P. 76090, <jgonzalezba@ipn.mx>
 Depends: numpy, pandas
 Description: We proposes a novel and robust 3D object segmentation method,  the Gaussian Density Model (GDM) algorithm. The algorithm works with point clouds scanned in the urban environment using the density metrics, based on existing quantity of features in the neighborhood. The LiDAR Velodyne 64E was used to scan urban environment.
 NeedsCompilation: test-example
