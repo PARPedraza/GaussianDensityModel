@@ -30,7 +30,7 @@ Example:
 ========
 
 
-``$ python -m doctest -v GDM.py``
+``$ python GDM.py``
 
 
 Cite article (In review):
