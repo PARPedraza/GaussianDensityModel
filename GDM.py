@@ -4,33 +4,15 @@
 #Guassian Density Model
 #Web Page
 #https://github.com/PARPedraza/GaussianDensityModel
-#autors: Alfonso Ramírez-Pedraza, CIO A. C., Loma del Bosque 115, Col. Lomas del Campestre, León, Gto, México. C.P. 37150 and 
-#        José-Joel González-Barbosa, CICATA-IPN, Cerro-Blanco 141, Colinas del Cimatario, Querétaro, Qro. Mexico C.P. 76090
+#autors: Alfonso Ramirez Pedraza and Jose Joel Gonzalez Barbosa
 
 """
 Example:
 
-        $ python -m doctest -v GDM.py
+        $ python GDM.py
 """
-
-"""Segmentation Gaussian Density Model
-Test Case
->>> dir=os.path.join(os.path.dirname(os.path.abspath(__file__)),"dataset")
->>> Density=0
->>> Point=GaussianDensity(dir,Density)
->>> list_files=Point.findFiles(dir)
->>> print("Segmentation in process...")
->>> for file in list_files:
->>> fileroot = dir + "/" + file
->>> Point.Validate(fileroot[:-4])
->>> cloud=Point.readData(fileroot)
->>> Point.OurSegmentation(cloud,fileroot[:-4])
->>> list_files1 = Point.findFiles(fileroot[:-4])
->>> Point.print2D(cloud,fileroot[:-4])
-"""
-
 import math
-import os,csv,time,pandas as pd
+import os,sys,csv,time,pandas as pd
 import numpy as np
 from numpy import *
 import matplotlib.pyplot as plt
@@ -38,6 +20,7 @@ from matplotlib import interactive
 from itertools import cycle
 import matplotlib as mpl
 from mpl_toolkits.mplot3d import Axes3D
+from time import time
 
 class GaussianDensity(object):
 
@@ -48,12 +31,10 @@ class GaussianDensity(object):
     #######################################################
     def __init__(self,dir,Density):
         """The constructor Initialize Gaussian Density Model.
-
         Args:
             self: The object pointer.
             dir (str): destination directory (read and save files).
             rootname (str): objects name.
-
         Returns:
             pointer: The object pointer.
         """
@@ -162,7 +143,7 @@ class GaussianDensity(object):
         list_files = [f for f in os.listdir(dir) if f.endswith(self.extencionObject)]
         return list_files
 
-    def print2D(self,cloud,files):
+    def print2D(self,cloud,files,list_files1):
         """Find Files csv type.
         Args:
             self: The object pointer.
@@ -325,3 +306,34 @@ class GaussianDensity(object):
                 Ren=len(cloudBeta)
             else:
                 Ren=0
+
+    def iniParam(self,list_files):
+        #Get process on cloud point find on path
+        print("Segmentation in process...")
+        for file in list_files:
+            ##Cadena File Name and Path
+            fileroot = dir + "/" + file
+
+            ##Validate: if exist folder to save objects
+            Point.Validate(fileroot[:-4])
+            ##Read Cloud Point
+            cloud=Point.readData(fileroot)
+
+            ##Get Our-Segmentation
+            Point.OurSegmentation(cloud,fileroot[:-4])
+
+            #Plot results
+            list_files1 = Point.findFiles(fileroot[:-4])
+            Point.print2D(cloud,fileroot[:-4],list_files1)
+
+if __name__ == "__main__":
+    # Variables Input
+    dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dataset")
+    Density = 0  # Density segmentation number
+
+    Point = GaussianDensity(dir, Density)
+
+    # Find cloud points
+    list_files = Point.findFiles(dir)
+    sys.exit(Point.iniParam(list_files))
+
