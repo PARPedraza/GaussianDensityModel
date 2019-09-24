@@ -11,3 +11,14 @@ NeedsCompilation: test-example
 Packaged: 2019-09-20 09:35:42 UTC; Guadalajara, Mexic, Monterrey
 Repository: PARPedraza
 Date/Publication: 2019-09-20 09:35:42
+Cite:
+@article{article,
+author = {A. R. Pedraza, J. J. G. Barbosa, K. L. F. Rodríguez, A. I. G. Moreno and E. A. G. Barbosa},
+year = {2019},
+month = {},
+pages = {},
+title = {Free-form object segmentation in urbanenvironments using Gaussian Density Model},
+volume = {},
+journal = {Latin America Transactions, IEEE (Revista IEEE America Latina},
+doi = {10.1109/TLA.}
+}
