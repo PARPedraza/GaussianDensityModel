@@ -1,22 +1,10 @@
 # -*- coding: utf-8 -*-
 # @package Segmentation Cloud Points LiDAR 64E Velodyne
-
-# Guassian Density Model
+# GDM - Guassian Density Model
 # Web Page
 # https://github.com/PARPedraza/GaussianDensityModel
-# autors: Alfonso Ramirez Pedraza and Jose Joel Gonzalez Barbosa
-"""Cite: 
-@article{article,
-author = {A. R. Pedraza, J. J. G. Barbosa, K. L. F. Rodríguez, A. I. G. Moreno and E. A. G. Barbosa},
-year = {2019},
-month = {},
-pages = {},
-title = {Free-form object segmentation in urbanenvironments using Gaussian Density Model},
-volume = {},
-journal = {Latin America Transactions, IEEE (Revista IEEE America Latina},
-doi = {10.1109/TLA.}
-}
-"""
+# autors: Alfonso Ramírez-Pedraza and José-Joel González-Barbosa
+
 """
 Example:
 
@@ -29,8 +17,6 @@ from numpy import *
 import matplotlib.pyplot as plt
 from matplotlib import interactive
 from itertools import cycle
-import matplotlib as mpl
-
 
 class GaussianDensity(object):
 

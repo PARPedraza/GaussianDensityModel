@@ -2,7 +2,10 @@
 Gaussian Density Model
 ====================
 
-Segmentation algorithm of urban environment, we used the LiDAR Velodyne 64E.
+Segmentation algorithm of urban environment, we used the LiDAR Velodyne 64E. The algorithm read and write type files csv.
+
+Input: (x,y,z,d) where d is density and (x,y,z) without density.
+Ouput: (x,y,z,d) 
 ==================
 
 
@@ -11,8 +14,11 @@ Required Modules:
 
   * PIP      
   * Numpy
+  * Maths
   * Pandas
+  * CSV
   * Matplotlib
+  * Intertools
 
 Installation:
 ==============================
@@ -23,9 +29,16 @@ Installation:
 
 ``$ pip install numpy``
 
+``$ pip install maths``
+
 ``$ pip install pandas``
 
+``$ pip install python-csv``
+
 ``$ pip install matplotlib``
+
+``$ pip install itertools-s``
+
 
 
 Example:
