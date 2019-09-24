@@ -7,6 +7,7 @@ Segmentation algorithm of urban environment, we used the LiDAR Velodyne 64E. The
 Input: (x,y,z,d) where d is density and (x,y,z) without density.
 
 Ouput: (x,y,z,d) objects segmentation.
+
 ==================
 
 
