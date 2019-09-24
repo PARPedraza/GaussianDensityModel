@@ -5,15 +5,26 @@
 # Web Page
 # https://github.com/PARPedraza/GaussianDensityModel
 # autors: Alfonso Ramirez Pedraza and Jose Joel Gonzalez Barbosa
-
+"""Cite: 
+@article{article,
+author = {A. R. Pedraza, J. J. G. Barbosa, K. L. F. Rodríguez, A. I. G. Moreno and E. A. G. Barbosa},
+year = {2019},
+month = {},
+pages = {},
+title = {Free-form object segmentation in urbanenvironments using Gaussian Density Model},
+volume = {},
+journal = {Latin America Transactions, IEEE (Revista IEEE America Latina},
+doi = {10.1109/TLA.}
+}
+"""
 """
 Example:
 
         $ python GDM.py -i iValue
 """
 import math, getopt
-import os, sys, csv, time, pandas as pd
 import numpy as np
+import os, sys, csv, pandas as pd
 from numpy import *
 import matplotlib.pyplot as plt
 from matplotlib import interactive
