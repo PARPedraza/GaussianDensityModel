@@ -1,5 +1,5 @@
 ====================
-Gaussian Density Model heyyy
+Gaussian Density Model
 ====================
 
 Segmentation algorithm of urban environment, we used the LiDAR Velodyne 64E. The algorithm read and write type files csv.
