@@ -12,6 +12,7 @@ Required Modules:
   * PIP      
   * Numpy
   * Pandas
+  * Matplotlib
 
 Installation:
 ==============================
@@ -24,6 +25,7 @@ Installation:
 
 ``$ pip install pandas``
 
+``$ pip install matplotlib``
 
 
 Example:
