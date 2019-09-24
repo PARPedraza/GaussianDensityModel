@@ -29,8 +29,9 @@ Installation:
 Example:
 ========
 
+``$ python GDM.py -h --help``
 
-``$ python GDM.py``
+``$ python GDM.py -i iValue``
 
 
 Cite article (In review):
