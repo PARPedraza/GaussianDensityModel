@@ -337,8 +337,8 @@ class GaussianDensity(object):
     def usage(self):
         print(" Opcions:")
         print("--help (-h)")
-        print("-i 1 \t\t <Get Segmentation with Density>")
-        print("-i 2 \t\t <Get Segmentation without Density>")
+        print("-i 1 \t\t <Get Segmentation using cloud points with Density>")
+        print("-i 2 \t\t <Get Segmentation using cloud points without Density>")
         sys.exit()
 
     def main(self, argv):
