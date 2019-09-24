@@ -5,7 +5,8 @@ Gaussian Density Model
 Segmentation algorithm of urban environment, we used the LiDAR Velodyne 64E. The algorithm read and write type files csv.
 
 Input: (x,y,z,d) where d is density and (x,y,z) without density.
-Ouput: (x,y,z,d) 
+
+Ouput: (x,y,z,d) objects segmentation.
 ==================
 
 
