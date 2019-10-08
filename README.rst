@@ -16,7 +16,7 @@ Required Modules:
 
   * PIP      
   * Numpy
-  * Maths
+  * Math
   * Pandas
   * CSV
   * Matplotlib
@@ -31,7 +31,7 @@ Installation:
 
 ``$ pip install numpy``
 
-``$ pip install maths``
+``$ pip install math``
 
 ``$ pip install pandas``
 
